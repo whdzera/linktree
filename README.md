@@ -1,13 +1,13 @@
 # Jekyll + Stimulus + Tailwind Starter 
 
-A clean and minimal boilerplate to kickstart static websites using **Jekyll**, **Stimulus.js**, and **Tailwind CSS**.  
-Ideal for blogs, documentation sites, personal landing pages, or fast-loading static projects.
+A clean and minimal boilerplate to kickstart vlient-side websites using **Jekyll**, **Stimulus.js**, and **Tailwind CSS**.  
+Ideal for blogs, documentation sites, personal landing pages, or fast-loading projects.
 
-Stimulus controllers are located in app/javascript/controllers
+Stimulus controllers are located in `app/javascript/controllers`
 
-Tailwind builds to app/assets/stylesheets/tailwind-input.css
+Tailwind builds to `app/assets/stylesheets/tailwind-input.css`
 
-Stimulus is loaded via application.js as an ES module
+Stimulus is loaded via `application.js` as an ES module
 
 ---
 
@@ -44,6 +44,6 @@ MIT License
 
 #### Credits
 
-Crafted by whdzera
+Created by `whdzera`
 
 Feel free to fork, improve, or contribute via pull requests!
