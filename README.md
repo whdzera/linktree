@@ -51,11 +51,27 @@ rake test
 rake stimulus[hello]
 ```
 
+## Automate for new jekyll
+
+### clone the repository
+```bash
+git clone https://github.com/username/jekyll-stimulus-tw-starter.git
+```
+
+### Create Rakefile 
+(need install `gem install rakefile`)
+![](https://gist.github.com/whdzera/aefad9ae560df32adfb7848e0bad28f2)
+
+### Let's go
+```bash
+rake jekyll[name_your_project]
+```
+
 ## License
 
 MIT License
 
-#### Credits
+### Credits
 
 Created by `whdzera`
 
