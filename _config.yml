@@ -14,3 +14,4 @@ plugins:
 
 include:
   - _pages
+  - app
