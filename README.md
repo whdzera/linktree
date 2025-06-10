@@ -23,29 +23,29 @@ Tailwind builds to `app/assets/stylesheets/tailwind-input.css`
 
 ## Installation
 
-### 1. Clone the Repository
+#### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/username/jekyll-stimulus-tw-starter.git
 cd jekyll-stimulus-tw-starter
 ```
 
-### 2. Install Dependencies
+#### 2. Install Dependencies
 ```bash
 bundle install && npm install
 ```
 
-### 3. Run the Development Server
+#### 3. Run the Development Server
 ```bash
 rake dev
 ```
 
-### 4. Run Rspec Testing
+#### 4. Run Rspec Testing
 ```bash
 rake test
 ```
 
-### 5. Generate Controller Stimulus
+#### 5. Generate Controller Stimulus
 `hello is example`
 ```bash
 rake stimulus[hello]
@@ -53,16 +53,17 @@ rake stimulus[hello]
 
 ## Automate for new jekyll
 
-### clone the repository
+#### clone the repository
 ```bash
 git clone https://github.com/username/jekyll-stimulus-tw-starter.git
 ```
 
-### Create Rakefile 
-(need install `gem install rakefile`)
-![](https://gist.github.com/whdzera/aefad9ae560df32adfb7848e0bad28f2)
+#### Create Rakefile 
+(need `gem install rakefile`)
 
-### Let's go
+https://gist.github.com/whdzera/aefad9ae560df32adfb7848e0bad28f2
+
+#### Let's go
 ```bash
 rake jekyll[name_your_project]
 ```
@@ -71,7 +72,7 @@ rake jekyll[name_your_project]
 
 MIT License
 
-### Credits
+#### Credits
 
 Created by `whdzera`
 
