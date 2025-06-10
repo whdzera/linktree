@@ -51,19 +51,13 @@ rake test
 rake stimulus[hello]
 ```
 
-## Automate for new jekyll
-
-#### clone the repository
-```bash
-git clone https://github.com/username/jekyll-stimulus-tw-starter.git
-```
+## Make Startable
+if you need new project jekyll with my template, just `rake jekyll[name_your_project]`
 
 #### Create Rakefile 
-(need `gem install rakefile`)
-
 https://gist.github.com/whdzera/aefad9ae560df32adfb7848e0bad28f2
 
-#### Let's go
+#### Let's try
 ```bash
 rake jekyll[name_your_project]
 ```
