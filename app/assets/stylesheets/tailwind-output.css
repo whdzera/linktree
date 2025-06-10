@@ -176,9 +176,6 @@
   }
 }
 @layer utilities {
-  .static {
-    position: static;
-  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -212,6 +209,9 @@
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .resize {
     resize: both;
