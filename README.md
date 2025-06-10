@@ -1,13 +1,18 @@
-# Jekyll + Stimulus + Tailwind Starter 
+# Jekyll + Stimulus.js + Tailwindcss
 
-A clean and minimal boilerplate to kickstart vlient-side websites using **Jekyll**, **Stimulus.js**, and **Tailwind CSS**.  
-Ideal for blogs, documentation sites, personal landing pages, or fast-loading projects.
+A clean boilerplate to kickstart client-side websites using **Jekyll**, **Stimulus.js**, and **Tailwind CSS**.  
+Ideal for blogs, documentation sites, personal landing pages or portfolio.
+
+I built this to make `ekyll`competitive with `Astro`
+
+Jekyll using version `4.4.1`
 
 Stimulus controllers are located in `app/javascript/controllers`
 
+Stimulus is loaded via `application.js` as an ES module
+
 Tailwind builds to `app/assets/stylesheets/tailwind-input.css`
 
-Stimulus is loaded via `application.js` as an ES module
 
 ---
 
