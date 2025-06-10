@@ -21,7 +21,7 @@
 
   <link
     rel="canonical"
-    href="{{ page.url | absolute_url | replace:'index.html','' }}"
+    href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
   />
 
   <link
@@ -32,8 +32,8 @@
   />
 
   <link
-    href="{{ site.baseurl }}/app/assets/stylesheets/tailwind-output.css"
     rel="stylesheet"
+    href="{{ site.baseurl }}/app/assets/stylesheets/tailwind-output.css"
   />
 
   <script
