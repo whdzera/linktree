@@ -26,7 +26,7 @@ Tailwind builds to `app/assets/stylesheets/tailwind-input.css`
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/username/jekyll-stimulus-tw-starter.git
+git clone https://github.com/whdzera/jekyll-stimulus-tw-starter.git
 cd jekyll-stimulus-tw-starter
 ```
 
