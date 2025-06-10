@@ -8,6 +8,7 @@ end
 
 group :development do
   gem "rake", "13.3.0"
+  gem "rspec", "3.13.0"
 end
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do

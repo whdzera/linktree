@@ -38,6 +38,17 @@ bundle install && npm install
 rake dev
 ```
 
+### 4. Run Rspec Testing
+```bash
+rake test
+```
+
+### 5. Generate Controller Stimulus
+`hello is example`
+```bash
+rake stimulus[hello]
+```
+
 ## License
 
 MIT License
