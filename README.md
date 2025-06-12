@@ -46,6 +46,8 @@ bundle install && npm install
 ```bash
 rake dev
 ```
+the command running jekyll sever development, tailwindcss --watch and vite(if you using vite)
+
 open `localhost:4000`
 
 #### 4. Run Rspec Testing
@@ -58,15 +60,20 @@ rake test
 ```bash
 rake stimulus[hello]
 ```
-make new file 'hello_controller.js` in `app/javascript/controllers`
+make new file 'hello_controller.js in `app/javascript/controllers`
 
 added import and register hello controller in `app/javascript/application.js`
 
-#### 4. Build using vite
+#### 6. Build using vite
 ```bash
 rake build
 ```
 file build in `app/build` 
+
+#### 7. Run Jekyll Sever Production
+```bash
+rake p
+```
 
 ## Generate new project
 if you need new project jekyll with my template, just `rake jekyll[name_your_project]`

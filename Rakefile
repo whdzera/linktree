@@ -60,5 +60,10 @@ task :stimulus, [:name] do |t, args|
   end
 end
 
+desc "Run Jekyll in production mode"
+task :p do
+  sh "JEKYLL_ENV=production bundle exec jekyll serve"
+end
+
 desc "Run RSpec tests"
 RSpec::Core::RakeTask.new(:test)
