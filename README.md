@@ -21,6 +21,32 @@ Tailwind builds to `app/assets/stylesheets/tailwind-input.css`
 
 ---
 
+## Structure
+
+├── _includes
+│   ├── footer.html
+│   ├── head.html
+│   └── navigation.html
+├── _layouts
+│   ├── default.html
+│   └── home.html
+├── _posts
+├── app
+│   ├── assets
+│   │   ├── images
+│   │   └── stylesheets
+│   └── javascript
+│       ├── application.js
+│       └── controllers
+├── spec
+|    └── spec_helper.rb
+├── 404.md
+├── _config.yml
+├── Gemfile
+├── package.json
+├── Rakefile
+├── index.md
+
 ## Installation
 
 #### 1. Clone the Repository
