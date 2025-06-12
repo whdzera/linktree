@@ -23,7 +23,7 @@ Tailwind builds to `app/assets/stylesheets/tailwind-input.css`
 
 ## Structure
 
-![https://i.imgur.com/aukHSw4.png]()
+<img src="https://i.imgur.com/aukHSw4.png">
 
 ## Installation
 
