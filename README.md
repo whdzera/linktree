@@ -25,8 +25,15 @@ Tailwind builds to `app/assets/stylesheets/tailwind-input.css`
 
 #### 1. Clone the Repository
 
+Use Direct Unpkg
 ```bash
 git clone https://github.com/whdzera/jekyll-stimulus-tw-starter.git
+cd jekyll-stimulus-tw-starter
+```
+
+Use Vite
+```bash
+git clone --single-branch --branch vite https://github.com/whdzera/jekyll-stimulus-tw-starter.git
 cd jekyll-stimulus-tw-starter
 ```
 
@@ -49,6 +56,11 @@ rake test
 `hello is example`
 ```bash
 rake stimulus[hello]
+```
+
+#### 4. Build using vite
+```bash
+rake build
 ```
 
 ## Make Startable
