@@ -25,7 +25,7 @@ Tailwind builds to `app/assets/stylesheets/tailwind-input.css`
 
 #### 1. Clone the Repository
 
-Use Direct Unpkg
+Use CDN Unpkg
 ```bash
 git clone https://github.com/whdzera/jekyll-stimulus-tw-starter.git
 cd jekyll-stimulus-tw-starter
@@ -46,6 +46,7 @@ bundle install && npm install
 ```bash
 rake dev
 ```
+open `localhost:4000`
 
 #### 4. Run Rspec Testing
 ```bash
@@ -57,13 +58,17 @@ rake test
 ```bash
 rake stimulus[hello]
 ```
+make new file 'hello_controller.js` in `app/javascript/controllers`
+
+added import and register hello controller in `app/javascript/application.js`
 
 #### 4. Build using vite
 ```bash
 rake build
 ```
+file build in `app/build` 
 
-## Make Startable
+## Generate new project
 if you need new project jekyll with my template, just `rake jekyll[name_your_project]`
 
 #### Create Rakefile 
