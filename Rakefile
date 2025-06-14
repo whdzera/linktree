@@ -6,13 +6,15 @@ end
 
 desc "Run Jekyll, Vite and Tailwind CSS --watch" 
 task :dev do
-  jekyll_pid = spawn("bundle exec jekyll serve")
-  vite_pid = spawn("npx vite")
-  tailwind_pid = spawn("npx @tailwindcss/cli -i ./app/assets/stylesheets/tailwind-input.css -o ./app/assets/stylesheets/tailwind-output.css --watch")
+  sh("npx @tailwindcss/cli -i ./app/assets/stylesheets/tailwind.css -o ./app/assets/stylesheets/application.css")
 
-  Process.wait(jekyll_pid)
-  Process.wait(vite_pid)
+  tailwind_pid = spawn("npx @tailwindcss/cli -i ./app/assets/stylesheets/tailwind.css -o ./app/assets/stylesheets/application.css --watch")
+  vite_pid = spawn("npx vite")
+  jekyll_pid = spawn("bundle exec jekyll serve")
+
   Process.wait(tailwind_pid)
+  Process.wait(vite_pid)
+  Process.wait(jekyll_pid)
 end
 
 desc "Build Vite"
