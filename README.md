@@ -31,7 +31,6 @@ Tailwind builds to `app/assets/stylesheets`
 
 #### 1. Clone the Repository
 
-clone
 ```bash
 git clone https://github.com/spellbooks/jekyll-template-starter.git
 cd jekyll-template-starter
@@ -77,7 +76,7 @@ rake p
 
 ## Gists
 
-- Automation Generate new Project jekyll use this template
+Automation Generate new Project jekyll use this template
 
 https://gist.github.com/whdzera/aefad9ae560df32adfb7848e0bad28f2
 
