@@ -1,21 +1,19 @@
-# Jekyll + Stimulus.js + Tailwindcss
+# Jekyll Starter
 
-A clean boilerplate to kickstart client-side websites using **Jekyll**, **Stimulus.js**, and **Tailwind CSS**.  
+A clean boilerplate to kickstart client-side sites using **Jekyll**, **Vite**, **Stimulus.js**, and **Tailwind CSS**.  
 Ideal for blogs, documentation sites, personal landing pages or portfolio.
 
-I built this to make Jekyll competitive with Astro.
+I built this template to make Jekyll competitive with Astro.
 
 Jekyll using version `4.4.1`
 
 Stimulus controllers are located in `app/javascript/controllers`
 
-Tailwind builds to `app/assets/stylesheets/tailwind-input.css`
+Tailwind builds to `app/assets/stylesheets`
 
----
-
-## Tech Stack
 
 - [Jekyll](https://jekyllrb.com/)
+- [Vite](https://vite.dev/)
 - [Stimulus.js](https://stimulus.hotwired.dev/)
 - [Tailwind CSS](https://tailwindcss.com/) 
 
@@ -25,20 +23,18 @@ Tailwind builds to `app/assets/stylesheets/tailwind-input.css`
 
 <img src="https://i.imgur.com/aukHSw4.png">
 
+## Prerequisites
+- Ruby 3.0^
+- Node 2.2^
+
 ## Installation
 
 #### 1. Clone the Repository
 
-Use CDN Unpkg
+clone
 ```bash
-git clone https://github.com/whdzera/jekyll-stimulus-tw-starter.git
-cd jekyll-stimulus-tw-starter
-```
-
-Use Vite
-```bash
-git clone --single-branch --branch vite https://github.com/whdzera/jekyll-stimulus-tw-starter.git
-cd jekyll-stimulus-tw-starter
+git clone https://github.com/spellbooks/jekyll-template-starter.git
+cd jekyll-template-starter
 ```
 
 #### 2. Install Dependencies
@@ -50,7 +46,7 @@ bundle install && npm install
 ```bash
 rake dev
 ```
-the command running jekyll sever development, tailwindcss --watch and vite(if you using vite)
+the command running jekyll, vite and tailwindcss
 
 open `localhost:4000`
 
@@ -68,7 +64,7 @@ make new file 'hello_controller.js in `app/javascript/controllers`
 
 added import and register hello controller in `app/javascript/application.js`
 
-#### 6. Build using vite
+#### 6. Build js using vite
 ```bash
 rake build
 ```
@@ -79,16 +75,11 @@ file build in `app/build`
 rake p
 ```
 
-## Generate new project
-if you need new project jekyll with my template, just `rake jekyll[name_your_project]`
+## Gists
 
-#### Create Rakefile 
+- Automation Generate new Project jekyll use this template
+
 https://gist.github.com/whdzera/aefad9ae560df32adfb7848e0bad28f2
-
-#### Let's try
-```bash
-rake jekyll[name_your_project]
-```
 
 ## License
 
