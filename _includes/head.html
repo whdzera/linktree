@@ -36,8 +36,13 @@
     href="{{ site.baseurl }}/app/assets/stylesheets/tailwind-output.css"
   />
 
+  {% if jekyll.environment == "development" %}
+  <script type="module" src="http://localhost:5173/application.js"></script>
+
+  {% else %}
   <script
     type="module"
-    src="{{ site.baseurl }}/app/javascript/application.js"
+    src="{{ site.baseurl }}/app/build/application.js"
   ></script>
+  {% endif %}
 </head>

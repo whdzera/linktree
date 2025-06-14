@@ -1,4 +1,4 @@
-import { Application } from "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js";
+import { Application } from "@hotwired/stimulus";
 
 window.Stimulus = Application.start();
 
