@@ -7,10 +7,11 @@ I built this template to make Jekyll competitive with Astro.
 
 Jekyll using version `4.4.1`
 
-Stimulus controllers are located in `app/javascript/controllers`
+Stimulus configuration `app/javascript/application.js`
+Stimulus controllers are located in `app/javascript/controllers/**`
 
-Tailwind builds to `app/assets/stylesheets`
-
+Tailwind input `app/assets/stylesheets/tailwind.css`
+Tailwind builds to `app/assets/stylesheets/application.css`
 
 - [Jekyll](https://jekyllrb.com/)
 - [Vite](https://vite.dev/)
@@ -67,7 +68,7 @@ added import and register hello controller in `app/javascript/application.js`
 ```bash
 rake build
 ```
-file build in `app/build` 
+file build in `app/build/application.js` 
 
 #### 7. Run Jekyll Sever Production
 ```bash
