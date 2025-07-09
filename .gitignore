@@ -7,4 +7,3 @@ vendor
 node_modules
 Gemfile.lock
 package-lock.json
-app/assets/stylesheets/application.css
