@@ -42,7 +42,7 @@ cd jekyll-template-starter
 bundle install && npm install
 ```
 
-#### 3. Run the Development Server
+#### 3. Run Jekyll Development Server
 ```bash
 rake dev
 ```
@@ -70,7 +70,7 @@ rake build
 ```
 file build in `app/build/application.js` 
 
-#### 7. Run Jekyll Sever Production
+#### 7. Run Jekyll Production Sever
 ```bash
 rake p
 ```
