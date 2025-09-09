@@ -1,4 +1,5 @@
 import { Application } from "@hotwired/stimulus";
+import "@hotwired/turbo";
 
 window.Stimulus = Application.start();
 
