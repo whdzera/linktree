@@ -16,6 +16,7 @@ include:
   - app
 
 exclude:
+  - lib
   - spec
   - package.json
   - package-lock.json
