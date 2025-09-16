@@ -1,4 +1,4 @@
-# Jekyll Starter
+# Jekyll Boilerplate
 
 A clean boilerplate to kickstart client-side sites using **Jekyll**, **Vite**, **Stimulus.js**, and **Tailwind CSS**.  
 Ideal for blogs, documentation sites, personal landing pages or portfolio.
@@ -7,18 +7,20 @@ I built this template to make Jekyll competitive with Astro.
 
 Jekyll using version `4.4.1`
 
-main javascript configuration `app/javascript/application.js`
-Stimulus controllers are located in `app/javascript/controllers/**`
-
-Tailwind input `app/assets/stylesheets/tailwind.css`
-Tailwind build output `app/assets/stylesheets/application.css`
-
 - [Jekyll](https://jekyllrb.com/)
 - [Vite](https://vite.dev/)
 - [Stimulus.js](https://stimulus.hotwired.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
----
+## Information
+
+main javascript configuration `app/javascript/application.js`
+
+Stimulus controllers are located in `app/javascript/controllers/**`
+
+Tailwind input `app/assets/stylesheets/tailwind.css`
+
+Tailwind build output `app/assets/stylesheets/application.css`
 
 ## Prerequisites
 
