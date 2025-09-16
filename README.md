@@ -7,24 +7,21 @@ I built this template to make Jekyll competitive with Astro.
 
 Jekyll using version `4.4.1`
 
-Stimulus configuration `app/javascript/application.js`
+main javascript configuration `app/javascript/application.js`
 Stimulus controllers are located in `app/javascript/controllers/**`
 
 Tailwind input `app/assets/stylesheets/tailwind.css`
-Tailwind builds to `app/assets/stylesheets/application.css`
+Tailwind build output `app/assets/stylesheets/application.css`
 
 - [Jekyll](https://jekyllrb.com/)
 - [Vite](https://vite.dev/)
 - [Stimulus.js](https://stimulus.hotwired.dev/)
-- [Tailwind CSS](https://tailwindcss.com/) 
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ---
 
-## Structure
-
-<img src="https://i.imgur.com/aukHSw4.png">
-
 ## Prerequisites
+
 - Ruby 3.0^
 - Node 2.2^
 
@@ -33,44 +30,54 @@ Tailwind builds to `app/assets/stylesheets/application.css`
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/spellbooks/jekyll-template-starter.git
-cd jekyll-template-starter
+git clone https://github.com/spellbooks/jekyll-boilerplate.git
+cd jekyll-boilerplate
 ```
 
 #### 2. Install Dependencies
+
 ```bash
 bundle install && npm install
 ```
 
 #### 3. Run Jekyll Development Server
+
 ```bash
 rake dev
 ```
+
 the command running jekyll, vite and tailwindcss
 
 open `localhost:4000`
 
 #### 4. Run Rspec Testing
+
 ```bash
 rake test
 ```
 
 #### 5. Generate Controller Stimulus
+
 `hello is example`
+
 ```bash
 rake stimulus[hello]
 ```
+
 make new file 'hello_controller.js in `app/javascript/controllers`
 
 added import and register hello controller in `app/javascript/application.js`
 
 #### 6. Build js using vite
+
 ```bash
 rake build
 ```
-file build in `app/build/application.js` 
+
+file build in `app/build/application.js`
 
 #### 7. Run Jekyll Production Sever
+
 ```bash
 rake p
 ```

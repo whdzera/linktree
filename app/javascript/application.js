@@ -3,5 +3,17 @@ import "@hotwired/turbo";
 
 window.Stimulus = Application.start();
 
-import MessageController from "./controllers/message_controller.js";
-Stimulus.register("message", MessageController);
+const controllers = import.meta.glob("./controllers/*_controller.js", {
+  eager: true,
+});
+
+for (const path in controllers) {
+  const controller = controllers[path].default;
+  const name = path
+    .split("/")
+    .pop()
+    .replace("_controller.js", "")
+    .replace(/_/g, "-");
+
+  Stimulus.register(name, controller);
+}
