@@ -56,19 +56,25 @@ open `localhost:4000`
 rake test
 ```
 
-#### 5. Generate Controller Stimulus
-
-`hello is example`
+#### 5. Generate html Layout
 
 ```bash
-rake stimulus[hello]
+rake layout[test]
 ```
 
-make new file 'hello_controller.js in `app/javascript/controllers`
+make new file 'test.html in `_layouts`
 
-added import and register hello controller in `app/javascript/application.js`
+#### 6. Generate Controller Stimulus
 
-#### 6. Build js using vite
+```bash
+rake stimulus[test]
+```
+
+make new file 'test_controller.js in `app/javascript/controllers`
+
+added import and register test controller in `app/javascript/application.js`
+
+#### 7. Build js using vite
 
 ```bash
 rake build
@@ -76,7 +82,7 @@ rake build
 
 file build in `app/build/application.js`
 
-#### 7. Run Jekyll Production Sever
+#### 8. Run Jekyll Production Sever
 
 ```bash
 rake p
