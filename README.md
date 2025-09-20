@@ -3,8 +3,6 @@
 A clean boilerplate to kickstart client-side sites using **Jekyll**, **Vite**, **Stimulus.js**, and **Tailwind CSS**.  
 Ideal for blogs, documentation sites, personal landing pages or portfolio.
 
-I built this template to make Jekyll competitive with Astro.
-
 Jekyll using version `4.4.1`
 
 - [Jekyll](https://jekyllrb.com/)
@@ -29,20 +27,25 @@ Tailwind build output `app/assets/stylesheets/application.css`
 
 ## Installation
 
-#### 1. Clone the Repository
-
-```bash
-git clone https://github.com/spellbooks/jekyll-boilerplate.git
-cd jekyll-boilerplate
+```
+gem install sylvia
 ```
 
-#### 2. Install Dependencies
+then
+
+```
+sylvia jekyll new_app
+```
+
+## Setup and Usage
+
+#### Install Dependencies
 
 ```bash
 bundle install && npm install
 ```
 
-#### 3. Run Jekyll Development Server
+#### Run Jekyll Development Server
 
 ```bash
 rake dev
@@ -52,13 +55,13 @@ the command running jekyll, vite and tailwindcss
 
 open `localhost:4000`
 
-#### 4. Run Rspec Testing
+#### Run Rspec Testing
 
 ```bash
 rake test
 ```
 
-#### 5. Generate html Layout
+#### Generate html Layout
 
 ```bash
 rake layout[test]
@@ -66,7 +69,7 @@ rake layout[test]
 
 make new file 'test.html in `_layouts`
 
-#### 6. Generate Controller Stimulus
+#### Generate Controller Stimulus
 
 ```bash
 rake stimulus[test]
@@ -76,7 +79,7 @@ make new file 'test_controller.js in `app/javascript/controllers`
 
 added import and register test controller in `app/javascript/application.js`
 
-#### 7. Build js using vite
+#### Build js using vite
 
 ```bash
 rake build
@@ -84,7 +87,7 @@ rake build
 
 file build in `app/build/application.js`
 
-#### 8. Run Jekyll Production Sever
+#### Run Jekyll Production Sever
 
 ```bash
 rake p
