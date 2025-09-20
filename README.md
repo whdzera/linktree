@@ -3,6 +3,8 @@
 A clean boilerplate to kickstart client-side sites using **Jekyll**, **Vite**, **Stimulus.js**, and **Tailwind CSS**.  
 Ideal for blogs, documentation sites, personal landing pages or portfolio.
 
+easy deploy on githubpages, netlify, vercel
+
 Jekyll using version `4.4.1`
 
 - [Jekyll](https://jekyllrb.com/)
@@ -93,11 +95,17 @@ file build in `app/build/application.js`
 rake p
 ```
 
-## Gists
+## Showcase
 
-Automation Generate new Project jekyll use this template
+list jekyll site using this template
 
-https://gist.github.com/whdzera/aefad9ae560df32adfb7848e0bad28f2
+- https://whdzera.github.io -> blog site
+- https://whdzera.github.io/totp -> TOTP Management
+- https://whdzera.github.io/todolist -> ToDoList
+- https://whdzera.github.io/calc -> Calculator
+- https://whdzera.github.io/strikethrough -> Strikethrough Text Generator
+- https://whdzera.github.io/findanime -> Find Anime by image
+- https://whdzera.github.io/xiAnimelist -> Animelist
 
 ## License
 
