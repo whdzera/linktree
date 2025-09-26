@@ -35,7 +35,7 @@
 
     <link
       rel="icon"
-      href="{{ site.baseurl }}/app/assets/images/favicon.ico"
+      href="{{ site.baseurl }}/app/assets/images/favicon.png"
       type="image/x-icon"
     />
 
@@ -56,10 +56,11 @@
   </head>
 
   <body
-    class="bg-gray-100 dark:bg-gray-900 dark:text-white transition-colors duration-300 max-h-100 overflow-y-auto"
+    class="min-h-screen flex flex-col items-center bg-cover bg-center bg-fixed bg-no-repeat px-4 py-10 transition-colors duration-500"
+    data-controller="theme"
+    data-theme-light-bg-value="{{ site.baseurl }}/app/assets/images/bg_light.jpg"
+    data-theme-dark-bg-value="{{ site.baseurl }}/app/assets/images/bg_dark.jpg"
   >
-    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      {{ content }}
-    </main>
+    {{ content }}
   </body>
 </html>
