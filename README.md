@@ -1,11 +1,4 @@
-# Jekyll Boilerplate
-
-A clean boilerplate to kickstart client-side sites using **Jekyll**, **Vite**, **Stimulus.js**, and **Tailwind CSS**.  
-Ideal for blogs, documentation sites, personal landing pages or portfolio.
-
-easy deploy on githubpages, netlify, vercel
-
-Jekyll using version `4.4.1`
+## Linktree whdzera
 
 - [Jekyll](https://jekyllrb.com/)
 - [Vite](https://vite.dev/)
@@ -26,18 +19,6 @@ Tailwind build output `app/assets/stylesheets/application.css`
 
 - Ruby 3.0^
 - Node 2.2^
-
-## Installation
-
-```
-gem install sylvia
-```
-
-then
-
-```
-sylvia jekyll new_app
-```
 
 ## Setup and Usage
 
@@ -95,18 +76,6 @@ file build in `app/build/application.js`
 rake p
 ```
 
-## Showcase
-
-list jekyll site using this template
-
-- https://whdzera.github.io -> blog site
-- https://whdzera.github.io/totp -> TOTP Management
-- https://whdzera.github.io/todolist -> ToDoList
-- https://whdzera.github.io/calc -> Calculator
-- https://whdzera.github.io/strikethrough -> Strikethrough Text Generator
-- https://whdzera.github.io/findanime -> Find Anime by image
-- https://whdzera.github.io/xiAnimelist -> Animelist
-
 ## License
 
 MIT License
@@ -114,5 +83,3 @@ MIT License
 #### Credits
 
 Created by `whdzera`
-
-Feel free to fork, improve, or contribute via pull requests!
