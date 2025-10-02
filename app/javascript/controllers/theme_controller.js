@@ -8,7 +8,15 @@ export default class ThemeController extends Controller {
   };
 
   connect() {
+    this.preloadBackgrounds();
     this.loadTheme();
+  }
+
+  preloadBackgrounds() {
+    const lightBg = new Image();
+    const darkBg = new Image();
+    lightBg.src = this.lightBgValue;
+    darkBg.src = this.darkBgValue;
   }
 
   toggle() {
@@ -21,10 +29,14 @@ export default class ThemeController extends Controller {
 
   loadTheme() {
     const savedTheme = localStorage.getItem("theme");
-    const isDark = savedTheme ? savedTheme === "dark" : true;
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    const isDark = savedTheme ? savedTheme === "dark" : prefersDark;
+
+    this.updateBackground(isDark);
     document.documentElement.classList.toggle("dark", isDark);
     this.updateIcons(isDark);
-    this.updateBackground(isDark);
   }
 
   updateIcons(isDark) {

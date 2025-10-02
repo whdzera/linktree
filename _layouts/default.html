@@ -56,6 +56,19 @@
       src="{{ site.baseurl }}/app/build/application.js"
     ></script>
     {% endif %}
+
+    <link
+      rel="preload"
+      as="image"
+      href="{{ site.baseurl }}/app/assets/images/bg_light.jpg"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="{{ site.baseurl }}/app/assets/images/bg_dark.jpg"
+      media="(prefers-color-scheme: dark)"
+    />
   </head>
 
   <body
