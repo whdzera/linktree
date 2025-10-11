@@ -42,6 +42,26 @@
       type="image/x-icon"
     />
 
+    <script>
+  (function() {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+    }
+
+    const lightBg = "{{ site.baseurl }}/_app/assets/images/bg_light.jpg";
+    const darkBg = "{{ site.baseurl }}/_app/assets/images/bg_dark.jpg";
+    const bg = isDark ? darkBg : lightBg;
+
+    document.write(
+      `<style>body{background-image:url('${bg}');background-size:cover;background-position:center;background-repeat:no-repeat;transition:background-image 0.5s ease}</style>`
+    );
+  })();
+  </script>
+
     <link
       rel="stylesheet"
       href="{{ site.baseurl }}/_app/assets/stylesheets/application.css"
@@ -73,12 +93,10 @@
 
   <body
     class="min-h-screen flex flex-col items-center bg-cover bg-center bg-fixed bg-no-repeat px-4 py-10 transition-colors duration-500"
-    data-controller="theme loader"
+    data-controller="theme"
     data-theme-light-bg-value="{{ site.baseurl }}/_app/assets/images/bg_light.jpg"
     data-theme-dark-bg-value="{{ site.baseurl }}/_app/assets/images/bg_dark.jpg"
   >
-    <div class="loader-wrapper" data-loader-target="loaderWrapper">
-      <div class="loader"></div>
     </div>
     {{ content }}
   </body>
