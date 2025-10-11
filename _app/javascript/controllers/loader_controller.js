@@ -8,19 +8,19 @@ export default class extends Controller {
   }
 
   preloadImages() {
-    const lightBg = new Image();
-    const darkBg = new Image();
-
     const lightBgUrl = this.element.dataset.themeLightBgValue;
     const darkBgUrl = this.element.dataset.themeDarkBgValue;
 
-    Promise.all([this.loadImage(lightBgUrl), this.loadImage(darkBgUrl)]).then(
-      () => {
+    Promise.all([this.loadImage(lightBgUrl), this.loadImage(darkBgUrl)])
+      .then(() => {
         this.hideLoader();
-      }
-    );
+      })
+      .catch(() => {
+        console.warn("Failed to load some background images");
+        this.hideLoader();
+      });
 
-    // Check if user prefers dark mode
+    // Set initial loader theme
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       this.loaderWrapperTarget.classList.add("dark");
     }
@@ -29,8 +29,21 @@ export default class extends Controller {
   loadImage(url) {
     return new Promise((resolve, reject) => {
       const img = new Image();
-      img.onload = () => resolve();
-      img.onerror = () => reject();
+
+      const timeoutId = setTimeout(() => {
+        reject(new Error(`Image load timeout: ${url}`));
+      }, 5000);
+
+      img.onload = () => {
+        clearTimeout(timeoutId);
+        resolve();
+      };
+
+      img.onerror = () => {
+        clearTimeout(timeoutId);
+        reject(new Error(`Failed to load image: ${url}`));
+      };
+
       img.src = url;
     });
   }
