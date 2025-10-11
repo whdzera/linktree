@@ -38,13 +38,13 @@
 
     <link
       rel="icon"
-      href="{{ site.baseurl }}/app/assets/images/favicon.png"
+      href="{{ site.baseurl }}/_app/assets/images/favicon.png"
       type="image/x-icon"
     />
 
     <link
       rel="stylesheet"
-      href="{{ site.baseurl }}/app/assets/stylesheets/application.css"
+      href="{{ site.baseurl }}/_app/assets/stylesheets/application.css"
     />
 
     {% if jekyll.environment == "development" %}
@@ -53,30 +53,33 @@
     {% else %}
     <script
       type="module"
-      src="{{ site.baseurl }}/app/build/application.js"
+      src="{{ site.baseurl }}/_app/build/application.js"
     ></script>
     {% endif %}
 
     <link
       rel="preload"
       as="image"
-      href="{{ site.baseurl }}/app/assets/images/bg_light.jpg"
+      href="{{ site.baseurl }}/_app/assets/images/bg_light.jpg"
       media="(prefers-color-scheme: light)"
     />
     <link
       rel="preload"
       as="image"
-      href="{{ site.baseurl }}/app/assets/images/bg_dark.jpg"
+      href="{{ site.baseurl }}/_app/assets/images/bg_dark.jpg"
       media="(prefers-color-scheme: dark)"
     />
   </head>
 
   <body
     class="min-h-screen flex flex-col items-center bg-cover bg-center bg-fixed bg-no-repeat px-4 py-10 transition-colors duration-500"
-    data-controller="theme"
-    data-theme-light-bg-value="{{ site.baseurl }}/app/assets/images/bg_light.jpg"
-    data-theme-dark-bg-value="{{ site.baseurl }}/app/assets/images/bg_dark.jpg"
+    data-controller="theme loader"
+    data-theme-light-bg-value="{{ site.baseurl }}/_app/assets/images/bg_light.jpg"
+    data-theme-dark-bg-value="{{ site.baseurl }}/_app/assets/images/bg_dark.jpg"
   >
+    <div class="loader-wrapper" data-loader-target="loaderWrapper">
+      <div class="loader"></div>
+    </div>
     {{ content }}
   </body>
 </html>

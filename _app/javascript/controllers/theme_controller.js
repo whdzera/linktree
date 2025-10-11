@@ -8,15 +8,7 @@ export default class ThemeController extends Controller {
   };
 
   connect() {
-    this.preloadBackgrounds();
     this.loadTheme();
-  }
-
-  preloadBackgrounds() {
-    const lightBg = new Image();
-    const darkBg = new Image();
-    lightBg.src = this.lightBgValue;
-    darkBg.src = this.darkBgValue;
   }
 
   toggle() {

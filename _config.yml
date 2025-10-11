@@ -11,11 +11,9 @@ username2: "_whdzera"
 username3: "@_whdzera"
 
 include:
-  - app
+  - _app
 
 exclude:
-  - lib
-  - spec
   - package.json
   - package-lock.json
   - README.md
