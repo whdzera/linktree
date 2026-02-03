@@ -6,9 +6,9 @@ baseurl: ""
 url: ""
 blog: "https://whdzera.com"
 username: "whdzera"
-username1: "@whdzera"
-username2: "_whdzera"
-username3: "@_whdzera"
+username_with_at: "@whdzera"
+username_with_underscore: "_whdzera"
+instagram: "@_whdzera"
 
 include:
   - _app
